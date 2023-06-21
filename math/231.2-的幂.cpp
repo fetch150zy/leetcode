@@ -80,8 +80,9 @@ public:
     bool isPowerOfTwo(int n) {
         if (n <= 0)
             return false;
-        int k = log2(n);
-        return (1 << k) == n ? true : false;
+        // int k = log2(n);
+        // return (1 << k) == n ? true : false;
+        return !(n & (n - 1));
     }
 };
 // @lc code=end
